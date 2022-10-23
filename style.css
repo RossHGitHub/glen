@@ -15,12 +15,36 @@ font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(61, 61, 56);
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: white;
     border-bottom: 4px solid black;
+    padding: 0 40px 0 40px;
+}
+
+#headerLink{
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.headerDropdown{
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: rgb(43, 38, 38);
+    height: 160px;
+    width: 160px;
+    border: 2px solid black;
+}
+
+#headerLink:hover + .headerDropdown{
+    display: block;
+    background-color: green;
 
 }
+
+
 .main{
     background-image: linear-gradient(to top right,  rgb(190, 193, 202), rgb(75, 79, 90));
     height: 820px;
@@ -80,4 +104,20 @@ font-family: Arial, Helvetica, sans-serif;
     background-image: url(./img/microphone.jpg);
     background-size: 150%;
     background-position: -100px;
+}
+
+
+.test{
+    display: none;
+    position: fixed;
+    background-image: url(./img/bulldog.jpg);
+    background-size: 100%;
+    height: 600px;
+    width: 1000px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.itemOne:hover + .test{
+    display: block;
 }
